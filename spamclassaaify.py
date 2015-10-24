@@ -11,8 +11,8 @@ if __name__ == '__main__':
   start = datetime.now()
   np.random.seed(10)
   #fetch dataframes
-  df_train = pd.read_csv(loc_train)
-  df_test = pd.read_csv(loc_test)
+  df_train = pd.read_table(loc_train)
+  df_test = pd.read_table(loc_test)
   #shuffle train df to prevent malordered samples
   df_train = df_train.reindex(np.random.permutation(df_train.index))
   #get the feature columns

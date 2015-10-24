@@ -6,7 +6,7 @@ import  numpy as np
 import re
 import jieba
 import time
-
+from sklearn.naive_bayes import GaussianNB
 t1 = time.time()
 
 #=====================First,load  text file and convert them into terms vectors.=========================#
